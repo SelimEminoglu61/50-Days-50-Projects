@@ -4,10 +4,10 @@ let lastScroll = 0;
 window.onscroll = (e) => {
   let currentScroll = scrollY;
   let scrollDelta = currentScroll - lastScroll;
-  console.log(scrollDelta);
 
-  if (scrollDelta == 7.5) {
-    // kontrol kısmı gelişmeli
+  console.log(window.innerHeight);
+  if (currentScroll % 19.5 == 0) {
+    // can develop part of control
     if (scrollDelta > 0) {
       for (let i = 0; i < boxDiv.length; i++) {
         if (boxDiv[i].classList != "box show") {
